@@ -52,7 +52,7 @@ public class ProductController {
 
   @PutMapping
   public List<ProductEntity> saveOrUpdateAll(
-      @Valid @RequestBody List<ProductEntity> productEntities) {
+      @RequestBody List<@Valid ProductEntity> productEntities) {
     return productService.saveOrUpdateAll(productEntities);
   }
 
