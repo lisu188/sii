@@ -10,4 +10,6 @@ public interface ProductRepository {
   ProductEntity saveOrUpdate(String id, ProductEntity entity);
 
   ProductEntity findById(String id);
+
+  ProductEntity deleteById(String id);
 }
